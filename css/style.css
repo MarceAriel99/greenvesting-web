@@ -122,7 +122,7 @@ nav li:hover {
 .landing h1{
     font-size: 5rem;
 }
-.landing h4{
+.landing h2{
     font-size: 1.5rem;
 }
 .landing a{
@@ -301,9 +301,15 @@ nav li:hover {
     max-width: 40%;
 }
 
+.vision h1 {
+    padding-top: 0em;
+    text-align: left;
+}
+
 .vision h2 {
     padding-top: 0em;
     text-align: left;
+    font-size: 1.2em;
 }
 
 .vision h4 {
@@ -334,7 +340,7 @@ nav li:hover {
     height: auto;
 }
 
-.tech .tech_container__element h4 {
+.tech .tech_container__element h3 {
     margin: 0em 0em 2em 0em;
     font-size: 1.2rem;
 }
@@ -378,7 +384,7 @@ nav li:hover {
     height: 8em;
 }
 
-.projects__container__card p, .projects__container__card h4{
+.projects__container__card p, .projects__container__card h3{
     text-align: center;
     margin: 0.75em 0em;
 }
@@ -481,7 +487,7 @@ nav li:hover {
     min-width: 20%;
 }
 
-.footer p, .footer h3, .footer h4, .footer a {
+.footer p, .footer h2, .footer a {
     color: white;
 }
 
@@ -489,7 +495,7 @@ nav li:hover {
     color: white;
 }
 
-.footer_container h3 {
+.footer_container h2 {
     text-decoration: underline;
     text-align: center;
     font-size: 1.5rem;
