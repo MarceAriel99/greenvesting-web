@@ -225,34 +225,33 @@ nav li:hover {
 }
 
 .opinions__container__card {
-    border: 3px solid var(--secondary-color);
-    padding: 4em;
-    width: 15%;
+    padding: 2em;
+    width: 25vw;
     height: auto;
-    background-color: var(--background-color-dark);
 }
 
 .opinions__container__card__userImg{
     display: block;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
-    width: 5em;
-    height: 5em;
-}
-
-.opinions__container__card__starsContainer {
-    margin: 1em 2em;
-}
-
-.opinions__container__card__starsContainer img{
-    width: 1.75em;
-    height: 1.75em;
+    padding: 0.5em;
+    border: solid black;
+    border-radius: 3em;
+    width: 6em;
+    height: 6em;
 }
 
 .opinions__container__card p {
     text-align: center;
-    color: white;
-    margin: 0.5em 0em;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin: 0.75em 0em;
+}
+
+.opinions__container__card__name {
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 /* CONTACT */
@@ -267,13 +266,11 @@ nav li:hover {
 }
 
 .contact .contact__container {
-    margin: 4em 6em;
+    margin: 4em 5em;
 }
 
 .contact form {
-    min-width: 45%;
-    max-width: 70%;
-    padding: 0em 2em;
+    width: 40vw;
 }
 
 .contact form input, .contact form textarea{
@@ -281,9 +278,10 @@ nav li:hover {
     margin: 1em 0em;
     resize: none;
     border: 3px solid var(--secondary-color);
+    max-width: 100%;
 }
 
-.contact form .secondaryButton{
+.contact form .secondaryButton, .contact__container__info p{
     margin-bottom: 0em;
 }
 
@@ -293,8 +291,7 @@ nav li:hover {
 }
 
 .contact__container__info {
-    min-width: 40%;
-    max-width: 50%;
+    width: 30vw;
 }
 
 .contact__container__info div .flex-between {
@@ -573,6 +570,33 @@ nav li:hover {
         max-width: 50%;
         margin: 0;
     }
+    /* OPINIONS */
+    .opinions__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .opinions__container__card {
+        width: 50vw;
+    }
+    /* CONTACT */
+    .contact .contact__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact form .flex-wrap {
+        flex-direction: column;
+    }
+    .contact form {
+        padding: 4em 0em;
+        width: 60vw;
+    }
+    .contact__container__info {
+        padding: 4em 0em;
+        min-width: 60vw;
+        height: 35em;
+    }
 }
 
 @media (max-width:768px) {
@@ -608,6 +632,26 @@ nav li:hover {
     /* TIMELINE */
     .timeline .flex-between p{
         max-width: 90%;
+    }
+    /* OPINIONS */
+    .opinions__container__card {
+        width: 90vw;
+    }
+    /* CONTACT */
+    .contact .contact__container {
+        margin: 0em 2em;
+    }
+    .contact form textarea{
+        height: 15em;
+    }
+    .contact__container__info .flex-wrap {
+        flex-direction: column;
+    }
+    .contact__container__info div {
+        justify-content: center;
+    }
+    .contact__container__info div{
+        align-self: center;    
     }
 }
 
