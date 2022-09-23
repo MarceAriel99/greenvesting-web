@@ -501,37 +501,80 @@ nav li:hover {
     background-color: var(--background-color-dark);
 }
 
-.footer_container {
-    min-height: 5em;
-}
-
-.footer_container_center div {
-    margin-top: 2em;
-}
-
-.footer_container .flex-between {
-    min-width: 20%;
-}
-
 .footer p, .footer h2, .footer a {
     color: white;
 }
 
-.footer .logo {
-    color: white;
+.footer__container img {
+    width: auto;
+    height: 2em;
+    padding: 0em 0.5em;
 }
 
-.footer_container h2 {
+.footer__container h2 {
     text-decoration: underline;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.footer_container img {
-    width: 3em;
-    height: 3em;
-    padding: 0em 0.5em;
+.footer__container {
+    min-height: 5em;
+
+    column-gap: 3em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "logo cta credit"
+    "phrase cta-btns disclaimer"
+    "phrase cta-btns link";
 }
+
+.footer__container .flex-between {
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.footer__logo {
+    grid-area: logo;
+}
+
+.footer__phrase {
+    grid-area: phrase;
+    align-self: end;
+}
+
+.footer hr.solid {
+    border-top: 3px solid var(--main-color);
+    padding: 1em 0em;
+    display: none;
+}
+
+.footer__container h2 {
+    grid-area: cta;
+}
+
+.footer__container div {
+    grid-area: cta-btns;
+}
+
+.footer__container .footer__credit {
+    grid-area: credit;
+}
+
+.footer__container .footer__disclaimer {
+    grid-area: disclaimer;
+}
+
+.footer__container a :not(.footer__logo) {
+    grid-area: link;
+}
+
+.footer .logo {
+    color: var(--main-color);
+}
+
 
 @media (max-width:1920px) {
     /* LANDING */
@@ -597,6 +640,23 @@ nav li:hover {
         min-width: 60vw;
         height: 35em;
     }
+    /* FOOTER */
+    .footer {
+        padding: 4em 4em;
+    }
+    .footer__container .flex-between {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo cta"
+        "phrase cta-btns"
+        "credit credit"
+        "disclaimer link";
+    }
 }
 
 @media (max-width:768px) {
@@ -652,6 +712,26 @@ nav li:hover {
     }
     .contact__container__info div{
         align-self: center;    
+    }
+    /* FOOTER */
+    .footer__container h2 {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    .footer__container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "phrase"
+        "credit"
+        "disclaimer"
+        "link"
+        "cta"
+        "cta-btns";
+    }
+    .footer hr.solid {
+        display: block;
     }
 }
 
