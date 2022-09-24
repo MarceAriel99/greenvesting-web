@@ -38,6 +38,7 @@ li {
 }
 
 .navbar {
+    z-index: 999;
     position: sticky;
     top: 0px;
 }
@@ -312,21 +313,12 @@ nav li:hover {
 }
 
 /* VISION */
-
+/*
 .vision {
     padding: 3em 6em;
     background-color: var(--background-color-ligth);
 }
-
-.vision img {
-    width: 100%;
-    height: auto;
-}
-
-.vision div {
-    max-width: 40%;
-}
-
+*/
 .vision h1 {
     padding-top: 0em;
     text-align: left;
@@ -352,7 +344,16 @@ nav li:hover {
     background-attachment: fixed;
     background-color: black;
     color: rgb(255, 255, 255);
-    padding: 3em 0em 6em 0em;
+    padding: 0em 0em 6em 0em;
+}
+
+.tech .gradient {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 82%, rgba(0,0,0,1) 98%);
+}
+
+.tech .section__title{
+    padding-top: 1em;
 }
 
 .tech .tech_container {
@@ -584,6 +585,13 @@ nav li:hover {
     }
 }
 
+@media (max-width:1400px) {
+    /* TECH */
+    .tech {
+        background-position: 35em 0em;
+    }
+}
+
 @media (max-width:1200px) {
     /* LANDING */
     .landing {
@@ -639,6 +647,11 @@ nav li:hover {
         padding: 4em 0em;
         min-width: 60vw;
         height: 35em;
+    }
+    /* TECH */
+    .tech {
+        background-size: 100%;
+        background-position: 30em 0em;
     }
     /* FOOTER */
     .footer {
@@ -713,6 +726,17 @@ nav li:hover {
     .contact__container__info div{
         align-self: center;    
     }
+    /* TECH */
+    .tech {
+        background-size: 120%;
+        background-position: 20em 0em;
+    }
+    .tech .tech_container__element {
+        max-width: 50%;
+    }
+    .tech .tech_container {
+        padding: 2em 3em;
+    }
     /* FOOTER */
     .footer__container h2 {
         text-align: center;
@@ -738,5 +762,16 @@ nav li:hover {
 @media (max-width:576px) {
     .section__title {
         font-size: 2rem;
+    }
+    /* TECH */
+    .tech {
+        background-size: 140%;
+        background-position: 15em 0em;
+    }
+    .tech .tech_container__element {
+        max-width: 100%;
+    }
+    .tech .tech_container {
+        padding: 2em 2em;
     }
 }
