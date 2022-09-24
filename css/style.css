@@ -26,6 +26,9 @@ a {
     color: var(--main-color);
     font-weight: bold;
 }
+.logo:hover {
+    color: var(--main-color);
+}
 
 li {
     list-style: none;
@@ -104,14 +107,25 @@ nav{
     background-color: var(--background-color-ligth);
     padding: 0.5em 10em 0.5em 1em;
 }
-nav .nav-item a{
-    font-size: 1.3rem;
-}
 nav .active{
     font-weight: bold;
 }
-nav li:hover {
-    font-weight: bold;
+nav .nav-item a {
+    padding-bottom: 0%;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+nav .navbar-toggler {
+    border: none;
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav .navbar-toggler-icon {
+    background-image: none;
 }
 
 /* LANDING */
@@ -640,11 +654,11 @@ nav li:hover {
         flex-direction: column;
     }
     .contact form {
-        padding: 4em 0em;
+        padding: 2em 0em;
         width: 60vw;
     }
     .contact__container__info {
-        padding: 4em 0em;
+        padding: 2em 0em;
         min-width: 60vw;
         height: 35em;
     }
@@ -717,6 +731,9 @@ nav li:hover {
     .contact form textarea{
         height: 15em;
     }
+    .contact__container__info, .contact form {
+        width: 90%;
+    }
     .contact__container__info .flex-wrap {
         flex-direction: column;
     }
@@ -774,4 +791,38 @@ nav li:hover {
     .tech .tech_container {
         padding: 2em 2em;
     }
+}
+
+/* ANIMATIONS */
+
+.hoverExpandSlow {
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.hoverExpandSlow:hover {
+    transform: scale(1.02);
+    transition: transform 1s;
+}
+
+.hoverExpandFast {
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+.hoverExpandFast:hover {
+    transform: scale(1.02);
+    transition: transform 0.25s;
+}
+
+.MovingUnderline {
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0px 2px;
+    transition: background-size .5s;
+}
+
+.MovingUnderline:hover {
+    background-size: 100% 2px;
 }
