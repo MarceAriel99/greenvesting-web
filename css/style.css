@@ -485,7 +485,8 @@ nav .navbar-toggler-icon {
     border: 3px solid;
     padding: 0.1em 0.25em;
     margin: 3em 3em;
-    width: 35%;
+    min-width: 20em;
+    max-width: 40em;
     height: auto;
 }
 
@@ -504,13 +505,18 @@ nav .navbar-toggler-icon {
 
 .moreQuestions {
     padding: 2em;
-    margin-left: 6em;
+    align-items: center;
 }
 
 .moreQuestions p, .moreQuestions a {
     font-size: 1.2rem;
     display: inline-block;
-    margin: 0em 1em;
+    margin: 0em;
+}
+
+.moreQuestions p {
+    font-size: 1.3rem;
+    padding: 1em;
 }
 
 /* FOOTER */
@@ -769,6 +775,13 @@ nav .navbar-toggler-icon {
         margin: 1em 2em;
         min-width: 25em;
     }
+    /* FAQ*/
+    .questions__container__card {
+        border: 3px solid;
+        padding: 0.1em 0.25em;
+        margin: 1.5em 1em;
+        min-width: 15em;
+    }
     /* FOOTER */
     .footer__container h2 {
         text-align: center;
@@ -809,6 +822,11 @@ nav .navbar-toggler-icon {
     /* PROFILES */
     .profiles__container__card {
         min-width: 15em;
+    }
+    /* FAQ */
+    .moreQuestions p {
+        font-size: 1.2rem;
+        padding: 1em 0em;
     }
 }
 
