@@ -414,15 +414,16 @@ nav .navbar-toggler-icon {
     border: 3px solid;
     padding: 2em;
     margin: 3em 5em;
-    width: 15%;
+    min-width: 26em;
+    max-width: 30em;
     height: auto;
 }
 
 .projects__container__card__img {
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    height: 8em;
+    width: 100%;
+    height: auto;
 }
 
 .projects__container__card p, .projects__container__card h3{
@@ -445,14 +446,18 @@ nav .navbar-toggler-icon {
     border: 3px solid;
     padding: 2em;
     margin: 3em 3em;
-    width: 35%;
+    max-width: 30vw;
+    min-width: 35em;
     height: auto;
+}
+
+.profiles__container__card ul {
+    padding-left: 0em;
 }
 
 .profiles__container__card h3 {
     font-size: 3rem;
     text-align: center;
-    padding: 0em 3em;
 }
 
 .profiles__container__card p {
@@ -754,6 +759,16 @@ nav .navbar-toggler-icon {
     .tech .tech_container {
         padding: 2em 3em;
     }
+    /* PROJECTS */
+    .projects__container__card {
+        min-width: 15em;
+    }
+    /* PROFILES */
+    .profiles__container__card {
+        padding: 1em;
+        margin: 1em 2em;
+        min-width: 25em;
+    }
     /* FOOTER */
     .footer__container h2 {
         text-align: center;
@@ -790,6 +805,10 @@ nav .navbar-toggler-icon {
     }
     .tech .tech_container {
         padding: 2em 2em;
+    }
+    /* PROFILES */
+    .profiles__container__card {
+        min-width: 15em;
     }
 }
 
