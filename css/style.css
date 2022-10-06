@@ -426,7 +426,7 @@ nav .navbar-toggler-icon {
     height: auto;
 }
 
-.projects__container__card p, .projects__container__card h3{
+.projects__container__card p, .projects__container__card h2{
     text-align: center;
     margin: 0.75em 0em;
 }
@@ -455,9 +455,13 @@ nav .navbar-toggler-icon {
     padding-left: 0em;
 }
 
-.profiles__container__card h3 {
+.profiles__container__card h2 {
     font-size: 3rem;
     text-align: center;
+}
+
+.profiles__container__card h3 {
+    font-size: 1.5rem;
 }
 
 .profiles__container__card p {
