@@ -140,7 +140,7 @@ nav .navbar-toggler-icon {
     padding: 25em 1em 12em 1em;
     text-align: center;
 }
-.landing h1{
+.landing aaaa{
     font-size: 5rem;
 }
 .landing h2{
@@ -333,7 +333,7 @@ nav .navbar-toggler-icon {
     background-color: var(--background-color-ligth);
 }
 */
-.vision h1 {
+.vision aaaa {
     padding-top: 0em;
     text-align: left;
 }
@@ -710,7 +710,7 @@ nav .navbar-toggler-icon {
         background-position-x: -400px;
         padding: 15em 1em 8em 1em;
     }
-    .landing h1{
+    .landing aaaa{
         font-size: 3rem;
     }
     /* ABOUT */
@@ -856,7 +856,7 @@ nav .navbar-toggler-icon {
     transition: transform 0.25s;
 }
 
-.MovingUnderline {
+.movingUnderline {
     background-image: linear-gradient(black, black);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -864,6 +864,6 @@ nav .navbar-toggler-icon {
     transition: background-size .5s;
 }
 
-.MovingUnderline:hover {
+.movingUnderline:hover {
     background-size: 100% 2px;
 }
