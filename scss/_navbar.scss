@@ -1,0 +1,34 @@
+.navbar {
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    border-bottom: solid;
+    background-color: var(--background-color-ligth);
+    padding: 0.5em 10em 0.5em 1em;
+
+    .active {
+        font-weight: bold;
+    }
+
+    .nav-item a {
+        padding-bottom: 0%;
+        margin-bottom: 0.3rem;
+        font-size: 1.3rem;
+        display: inline-block;
+    }
+    
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-toggler-icon {
+        background-image: none;
+    }
+}

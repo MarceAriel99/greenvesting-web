@@ -1,0 +1,82 @@
+$mainColor: #1d6429;
+$secondaryColor: #7da182;
+$backgroundColorLigth: #e9f0e8;
+$backgroundColorDark: #1d2722;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: $mainColor;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.secondaryButton{
+    display: inline-block;
+    color: black;
+    border: 2px solid $mainColor;
+    font-weight: bold;
+    margin-top: 1em;
+    padding: 0.25em;
+    font-size: 1rem;
+    border-radius: 0.5em;
+
+    &:hover {
+        background: $mainColor;
+        color: white;
+    }
+}
+
+/*FELX STYLES*/
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+/*GRID*/
+
+.grid-container {
+    display: grid;
+}
