@@ -1,8 +1,7 @@
 @import "_common";
-@import "_navbar";
 @import "_text";
-@import "_footer";
-@import "_anim";
+@import "_mixins";
+@import "_navbar";
 
 /* LANDING */
 .landing {
@@ -16,11 +15,10 @@
     text-align: center;
 
     a{
+        @include text(1.75rem, start, white);
         display: inline-block;
-        color: white;
         border: 3px solid $mainColor;
         font-weight: bold;
-        font-size: 1.75rem;
         padding: 0.4em;
         border-radius: 1em;
         margin: 2em;
@@ -55,9 +53,7 @@
 
 .about__grid {
     margin: 5em 2em;
-    column-gap: 3em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    @include grid (auto, auto, 3em, 0em);
     grid-template-areas: 
     "info img1 img2 img3"
     "button img1 img2 img3";
@@ -121,9 +117,7 @@
     height: auto;
 
     p {
-        text-align: center;
-        font-size: 1.2em;
-        color: rgb(0, 0, 0);
+        @include text(1.2rem, center, black);
         margin: 0.75em 0em;
     }
 }
@@ -329,8 +323,7 @@
     }
 
     h2 {
-        font-size: 3rem;
-        text-align: center;
+        @include text(3rem, center, black);
     }
 
     h3 {
@@ -343,8 +336,7 @@
     }
 
     a {
-        text-align: center;
-        font-size: 1.5rem;
+        @include text(1.5rem, center, black);
     }
 }
 
@@ -399,198 +391,6 @@
     }
 }
 
-/*MEDIA QUERIES*/
-
-@media (max-width:1920px) {
-    /* LANDING */
-    .landing {
-        background-size: 1920px 1080px;
-        background-position-y: -50px;
-    }
-}
-
-@media (max-width:1400px) {
-    /* TECH */
-    .tech {
-        background-position: 35em 0em;
-    }
-}
-
-@media (max-width:1200px) {
-    /* LANDING */
-    .landing {
-        background-position-y: center;
-        padding: 20em 1em 10em 1em;
-    }
-    /* ABOUT */
-    .about__grid {
-        row-gap: 1em;
-        grid-template-areas: 
-        "info info info"
-        "button button button"
-        "img1 img2 img3";
-    }
-    /* TIMELINE */
-    .timeline .flex-between {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 80vh;
-        margin: 0;
-
-        p {
-            max-width: 50%;
-            margin: 0;
-        }
-    }
-    /* OPINIONS */
-    .opinions__container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .opinions__container__card {
-        width: 50vw;
-    }
-    /* CONTACT */
-    .contact .contact__container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .contact form {
-        padding: 2em 0em;
-        width: 60vw;
-
-        .flex-wrap {
-            flex-direction: column;
-        }
-    }
-    .contact__container__info {
-        padding: 2em 0em;
-        min-width: 60vw;
-        height: 35em;
-    }
-    /* TECH */
-    .tech {
-        background-size: 100%;
-        background-position: 30em 0em;
-    }
-}
-
-@media (max-width:768px) {
-    .section__title {
-        font-size: 2.5rem;
-    }
-    /* LANDING */
-    .landing {
-        background-position-x: -400px;
-        padding: 15em 1em 8em 1em;
-
-        h1{
-            font-size: 3rem;
-        }
-    }
-    /* ABOUT */
-    .about__grid {
-        column-gap: 1em;
-        grid-template-areas: 
-        "info info"
-        "button button"
-        "img1 img2"
-        "img3 img3";
-    }
-    #about__img3__portrait {
-        display: none;
-    }
-    #about__img3__landscape {
-        display: block;
-    }
-    /* TIMELINE */
-    .timeline .flex-between p{
-        max-width: 90%;
-    }
-    /* OPINIONS */
-    .opinions__container__card {
-        width: 90vw;
-    }
-    /* CONTACT */
-    .contact {
-        .contact__container {
-            margin: 0em 2em;
-        }
-
-        form {
-            width: 90%;
-
-            textarea {
-                height: 15em;
-            }
-        }
-    }
-    .contact__container__info {
-        width: 90%;
-
-        .flex-wrap {
-            flex-direction: column;
-        }
-
-        div {
-            align-self: center;
-            justify-content: center;
-        }
-    }
-
-    /* TECH */
-    .tech {
-        background-size: 120%;
-        background-position: 20em 0em;
-    }
-    .tech .tech_container__element {
-        max-width: 50%;
-    }
-    .tech .tech_container {
-        padding: 2em 3em;
-    }
-    /* PROJECTS */
-    .projects__container__card {
-        min-width: 15em;
-    }
-    /* PROFILES */
-    .profiles__container__card {
-        padding: 1em;
-        margin: 1em 2em;
-        min-width: 25em;
-    }
-    /* FAQ*/
-    .questions__container__card {
-        margin: 1.5em 1em;
-        min-width: 15em;
-    }
-}
-
-@media (max-width:576px) {
-    .section__title {
-        font-size: 2rem;
-    }
-    /* TECH */
-    .tech {
-        background-size: 140%;
-        background-position: 15em 0em;
-    }
-    .tech .tech_container__element {
-        max-width: 100%;
-    }
-    .tech .tech_container {
-        padding: 2em 2em;
-    }
-    /* PROFILES */
-    .profiles__container__card {
-        min-width: 15em;
-    }
-    /* FAQ */
-    .moreQuestions p {
-        font-size: 1.2rem;
-        padding: 1em 0em;
-    }
-}
+@import "_footer";
+@import "_anim";
+@import "_breakpoints";

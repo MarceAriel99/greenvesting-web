@@ -1,0 +1,13 @@
+@mixin text ($fontsize, $text-align, $color) {
+    font-size: $fontsize;
+    text-align: $text-align;
+    color: $color;
+}
+
+@mixin grid ($template-columns, $template-rows, $column-gap, $row-gap) {
+    display: grid;
+    grid-template-columns: $template-columns;
+    grid-template-rows: $template-rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}

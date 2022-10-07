@@ -69,9 +69,14 @@ li {
   flex-wrap: nowrap;
 }
 
-/*GRID*/
-.grid-container {
-  display: grid;
+* {
+  font-family: "Poppins";
+}
+
+.section__title {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .navbar {
@@ -105,140 +110,6 @@ nav .navbar-toggler-icon {
   background-image: none;
 }
 
-* {
-  font-family: "Poppins";
-}
-
-.section__title {
-  font-size: 3rem;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.footer {
-  padding: 4em 6em;
-  border-top: 2px solid #7da182;
-  background-color: #1d2722;
-}
-.footer p, .footer h2, .footer a {
-  color: white;
-}
-
-.footer__container {
-  min-height: 5em;
-  -moz-column-gap: 3em;
-       column-gap: 3em;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "logo cta credit" "phrase cta-btns disclaimer" "phrase cta-btns link";
-}
-.footer__container img {
-  width: auto;
-  height: 2em;
-  padding: 0em 0.5em;
-}
-.footer__container h2 {
-  text-decoration: underline;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.footer__container .flex-between {
-  align-items: center;
-  justify-content: space-around;
-  min-width: 100%;
-}
-
-.footer__logo {
-  grid-area: logo;
-}
-
-.footer__phrase {
-  grid-area: phrase;
-  align-self: end;
-}
-
-.footer hr.solid {
-  border-top: 3px solid #1d6429;
-  padding: 1em 0em;
-  display: none;
-}
-
-.footer__container h2 {
-  grid-area: cta;
-}
-
-.footer__container div {
-  grid-area: cta-btns;
-}
-
-.footer__container .footer__credit {
-  grid-area: credit;
-}
-
-.footer__container .footer__disclaimer {
-  grid-area: disclaimer;
-}
-
-.footer__container a :not(.footer__logo) {
-  grid-area: link;
-}
-
-.footer .logo {
-  color: #1d6429;
-}
-
-/*MEDIA QUERIES*/
-@media (max-width: 1200px) {
-  .footer {
-    padding: 4em 4em;
-  }
-  .footer__container {
-    grid-template-areas: "logo cta" "phrase cta-btns" "credit credit" "disclaimer link";
-  }
-  .footer__container .flex-between {
-    justify-content: space-between;
-  }
-}
-@media (max-width: 768px) {
-  .footer__container {
-    grid-template-areas: "logo" "phrase" "credit" "disclaimer" "link" "cta" "cta-btns";
-  }
-  .footer__container h2 {
-    padding-bottom: 1em;
-  }
-  .footer hr.solid {
-    display: block;
-  }
-}
-.hoverExpandSlow {
-  transform: scale(1);
-  transition: transform 1s;
-}
-.hoverExpandSlow:hover {
-  transform: scale(1.02);
-  transition: transform 1s;
-}
-
-.hoverExpandFast {
-  transform: scale(1);
-  transition: transform 0.25s;
-}
-.hoverExpandFast:hover {
-  transform: scale(1.02);
-  transition: transform 0.25s;
-}
-
-.movingUnderline {
-  background-image: linear-gradient(black, black);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0px 2px;
-  transition: background-size 0.5s;
-}
-.movingUnderline:hover {
-  background-size: 100% 2px;
-}
-
 /* LANDING */
 .landing {
   background-image: url("../resources/landing_bg_blur.webp");
@@ -250,11 +121,12 @@ nav .navbar-toggler-icon {
   text-align: center;
 }
 .landing a {
-  display: inline-block;
+  font-size: 1.75rem;
+  text-align: start;
   color: white;
+  display: inline-block;
   border: 3px solid #1d6429;
   font-weight: bold;
-  font-size: 1.75rem;
   padding: 0.4em;
   border-radius: 1em;
   margin: 2em;
@@ -284,10 +156,12 @@ nav .navbar-toggler-icon {
 
 .about__grid {
   margin: 5em 2em;
-  -moz-column-gap: 3em;
-       column-gap: 3em;
+  display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+  row-gap: 0em;
   grid-template-areas: "info img1 img2 img3" "button img1 img2 img3";
 }
 
@@ -344,9 +218,9 @@ nav .navbar-toggler-icon {
   height: auto;
 }
 .opinions__container__card p {
+  font-size: 1.2rem;
   text-align: center;
-  font-size: 1.2em;
-  color: rgb(0, 0, 0);
+  color: black;
   margin: 0.75em 0em;
 }
 
@@ -525,6 +399,7 @@ nav .navbar-toggler-icon {
 .profiles__container__card h2 {
   font-size: 3rem;
   text-align: center;
+  color: black;
 }
 .profiles__container__card h3 {
   font-size: 1.5rem;
@@ -534,8 +409,9 @@ nav .navbar-toggler-icon {
   padding: 3em 0em;
 }
 .profiles__container__card a {
-  text-align: center;
   font-size: 1.5rem;
+  text-align: center;
+  color: black;
 }
 
 /* FAQ */
@@ -583,7 +459,109 @@ nav .navbar-toggler-icon {
   margin: 0em;
 }
 
-/*MEDIA QUERIES*/
+.footer {
+  padding: 4em 6em;
+  border-top: 2px solid #7da182;
+  background-color: #1d2722;
+}
+.footer p, .footer h2, .footer a {
+  color: white;
+}
+
+.footer__container {
+  min-height: 5em;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+  row-gap: 0em;
+  grid-template-areas: "logo cta credit" "phrase cta-btns disclaimer" "phrase cta-btns link";
+}
+.footer__container img {
+  width: auto;
+  height: 2em;
+  padding: 0em 0.5em;
+}
+.footer__container h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer__container .flex-between {
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+
+.footer__phrase {
+  grid-area: phrase;
+  align-self: end;
+}
+
+.footer hr.solid {
+  border-top: 3px solid #1d6429;
+  padding: 1em 0em;
+  display: none;
+}
+
+.footer__container h2 {
+  grid-area: cta;
+}
+
+.footer__container div {
+  grid-area: cta-btns;
+}
+
+.footer__container .footer__credit {
+  grid-area: credit;
+}
+
+.footer__container .footer__disclaimer {
+  grid-area: disclaimer;
+}
+
+.footer__container a :not(.footer__logo) {
+  grid-area: link;
+}
+
+.footer .logo {
+  color: #1d6429;
+}
+
+.hoverExpandSlow {
+  transform: scale(1);
+  transition: transform 1s;
+}
+.hoverExpandSlow:hover {
+  transform: scale(1.02);
+  transition: transform 1s;
+}
+
+.hoverExpandFast {
+  transform: scale(1);
+  transition: transform 0.25s;
+}
+.hoverExpandFast:hover {
+  transform: scale(1.02);
+  transition: transform 0.25s;
+}
+
+.movingUnderline {
+  background-image: linear-gradient(black, black);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0px 2px;
+  transition: background-size 0.5s;
+}
+.movingUnderline:hover {
+  background-size: 100% 2px;
+}
+
 @media (max-width: 1920px) {
   /* LANDING */
   .landing {
@@ -651,6 +629,16 @@ nav .navbar-toggler-icon {
   .tech {
     background-size: 100%;
     background-position: 30em 0em;
+  }
+  /* FOOTER */
+  .footer {
+    padding: 4em 4em;
+  }
+  .footer__container {
+    grid-template-areas: "logo cta" "phrase cta-btns" "credit credit" "disclaimer link";
+  }
+  .footer__container .flex-between {
+    justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
@@ -730,6 +718,16 @@ nav .navbar-toggler-icon {
   .questions__container__card {
     margin: 1.5em 1em;
     min-width: 15em;
+  }
+  /* FOOTER */
+  .footer__container {
+    grid-template-areas: "logo" "phrase" "credit" "disclaimer" "link" "cta" "cta-btns";
+  }
+  .footer__container h2 {
+    padding-bottom: 1em;
+  }
+  .footer hr.solid {
+    display: block;
   }
 }
 @media (max-width: 576px) {

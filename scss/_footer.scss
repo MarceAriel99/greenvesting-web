@@ -10,10 +10,7 @@
 
 .footer__container {
     min-height: 5em;
-    column-gap: 3em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-
+    @include grid(auto, auto, 3em, 0em);
     grid-template-areas: 
     "logo cta credit"
     "phrase cta-btns disclaimer"
@@ -75,43 +72,4 @@
 
 .footer .logo {
     color: $mainColor;
-}
-
-/*MEDIA QUERIES*/
-
-@media (max-width:1200px) {
-    .footer {
-        padding: 4em 4em;
-    }
-    .footer__container {
-        grid-template-areas: 
-        "logo cta"
-        "phrase cta-btns"
-        "credit credit"
-        "disclaimer link";
-
-        .flex-between {
-            justify-content: space-between;
-        }
-    }
-}
-
-@media (max-width:768px) {
-    .footer__container {
-        grid-template-areas: 
-        "logo"
-        "phrase"
-        "credit"
-        "disclaimer"
-        "link"
-        "cta"
-        "cta-btns";
-
-        h2 {
-            padding-bottom: 1em;
-        }
-    }
-    .footer hr.solid {
-        display: block;
-    }
 }
