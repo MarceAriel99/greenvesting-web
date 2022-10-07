@@ -12,13 +12,10 @@
     background-position-y: -300px;
 
     padding: 25em 1em 12em 1em;
-    text-align: center;
 
     a{
         @include text(1.75rem, start, white);
-        display: inline-block;
         border: 3px solid $mainColor;
-        font-weight: bold;
         padding: 0.4em;
         border-radius: 1em;
         margin: 2em;
@@ -35,10 +32,6 @@
 }
 
 /* ABOUT */
-
-#about__img3__landscape {
-    display: none;
-}
 
 .about {
     background-color: $backgroundColorLigth;
@@ -65,7 +58,6 @@
 
 .about__button {
     grid-area: button;
-    align-self: end;
 }
 
 .about__img1 {
@@ -93,10 +85,6 @@
             max-width: 25%;
             color: white;
         }
-    }
-    
-    h2 {
-        color: white;
     }
 }
 

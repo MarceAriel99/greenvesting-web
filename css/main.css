@@ -118,15 +118,12 @@ nav .navbar-toggler-icon {
   background-position-x: center;
   background-position-y: -300px;
   padding: 25em 1em 12em 1em;
-  text-align: center;
 }
 .landing a {
   font-size: 1.75rem;
   text-align: start;
   color: white;
-  display: inline-block;
   border: 3px solid #1d6429;
-  font-weight: bold;
   padding: 0.4em;
   border-radius: 1em;
   margin: 2em;
@@ -140,10 +137,6 @@ nav .navbar-toggler-icon {
 }
 
 /* ABOUT */
-#about__img3__landscape {
-  display: none;
-}
-
 .about {
   background-color: #e9f0e8;
   padding: 3em 0em 1em 0em;
@@ -171,7 +164,6 @@ nav .navbar-toggler-icon {
 
 .about__button {
   grid-area: button;
-  align-self: end;
 }
 
 .about__img1 {
@@ -196,9 +188,6 @@ nav .navbar-toggler-icon {
 }
 .timeline .flex-between p {
   max-width: 25%;
-  color: white;
-}
-.timeline h2 {
   color: white;
 }
 
@@ -658,12 +647,6 @@ nav .navbar-toggler-icon {
     -moz-column-gap: 1em;
          column-gap: 1em;
     grid-template-areas: "info info" "button button" "img1 img2" "img3 img3";
-  }
-  #about__img3__portrait {
-    display: none;
-  }
-  #about__img3__landscape {
-    display: block;
   }
   /* TIMELINE */
   .timeline .flex-between p {
