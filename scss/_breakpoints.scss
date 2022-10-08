@@ -11,14 +11,6 @@
     .tech {
         background-position: 35em 0em;
     }
-}
-
-@media (max-width:1200px) {
-    /* LANDING */
-    .landing {
-        background-position-y: center;
-        padding: 20em 1em 10em 1em;
-    }
     /* ABOUT */
     .about__grid {
         row-gap: 1em;
@@ -26,6 +18,14 @@
         "info info info"
         "button button button"
         "img1 img2 img3";
+    }
+}
+
+@media (max-width:1200px) {
+    /* LANDING */
+    .landing {
+        background-position-y: center;
+        padding: 20em 1em 10em 1em;
     }
     /* TIMELINE */
     .timeline .flex-between {

@@ -218,8 +218,7 @@ nav .navbar-toggler-icon {
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5em;
-  border: solid black;
+  box-shadow: 2px 10px 1.5em 0.25em rgba(0, 0, 0, 0.575);
   border-radius: 3em;
   width: 6em;
   height: 6em;
@@ -563,17 +562,17 @@ nav .navbar-toggler-icon {
   .tech {
     background-position: 35em 0em;
   }
+  /* ABOUT */
+  .about__grid {
+    row-gap: 1em;
+    grid-template-areas: "info info info" "button button button" "img1 img2 img3";
+  }
 }
 @media (max-width: 1200px) {
   /* LANDING */
   .landing {
     background-position-y: center;
     padding: 20em 1em 10em 1em;
-  }
-  /* ABOUT */
-  .about__grid {
-    row-gap: 1em;
-    grid-template-areas: "info info info" "button button button" "img1 img2 img3";
   }
   /* TIMELINE */
   .timeline .flex-between {
