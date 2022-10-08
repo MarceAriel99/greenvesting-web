@@ -73,6 +73,10 @@
         background-size: 100%;
         background-position: 30em 0em;
     }
+    /* PROFILES */
+    .profiles__container__card {
+        max-width: 70vw;
+    }
     /* FOOTER */
     .footer {
         padding: 4em 4em;
@@ -159,13 +163,14 @@
     }
     /* PROJECTS */
     .projects__container__card {
+        margin: 1.5em 1em;
         min-width: 15em;
     }
     /* PROFILES */
     .profiles__container__card {
         padding: 1em;
         margin: 1em 2em;
-        min-width: 25em;
+        max-width: 85vw;
     }
     /* FAQ*/
     .questions__container__card {
@@ -209,7 +214,8 @@
     }
     /* PROFILES */
     .profiles__container__card {
-        min-width: 15em;
+        //min-width: 15em;
+        margin: 1.5em 1em;
     }
     /* FAQ */
     .moreQuestions p {
