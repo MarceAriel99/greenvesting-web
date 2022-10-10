@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 html {
   scroll-behavior: smooth;
@@ -279,15 +280,15 @@ nav .navbar-toggler-icon {
   margin-right: 0.75em;
 }
 
-/* VISION */
-.vision h1, .vision h2 {
+/* MISIÓN */
+.mision h1, .mision h2 {
   padding-top: 0em;
   text-align: left;
 }
-.vision h2 {
+.mision h2 {
   font-size: 1.2em;
 }
-.vision h4 {
+.mision h4 {
   margin: 0.5em 0em 1.5em 0em;
 }
 
