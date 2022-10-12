@@ -347,15 +347,35 @@ nav .navbar-toggler-icon {
 .projects__container__card {
   background-color: rgb(236, 236, 236);
   border: 3px solid;
+  border-radius: 0.5em;
   padding: 2em;
-  margin: 3em 5em;
+  margin: 3em 3em;
   min-width: 26em;
   max-width: 30em;
   height: auto;
+  box-shadow: 2px 10px 1.5em 0.25em rgba(0, 0, 0, 0.575);
+}
+.projects__container__card h2 {
+  font-weight: 600;
 }
 .projects__container__card p, .projects__container__card h2 {
   text-align: center;
   margin: 0.75em 0em;
+}
+.projects__container__card .progress {
+  border: 2px solid #1d6429;
+  height: 2em;
+  margin-right: 2em;
+  font-size: 1em;
+}
+.projects__container__card .progrss-bar {
+  color: blue;
+}
+.projects__container__card .secondaryButton {
+  margin-top: 0em;
+}
+.projects__container__card .flex-between {
+  align-items: center;
 }
 
 .projects__container__card__img {
@@ -363,6 +383,7 @@ nav .navbar-toggler-icon {
   margin-right: auto;
   width: 100%;
   height: auto;
+  border-radius: 0.35em;
 }
 
 /* PROFILES */
