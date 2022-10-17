@@ -6,7 +6,7 @@
 
 nav{
     border-bottom: solid;
-    background-color: var(--background-color-ligth);
+    background-color: $backgroundColorLigth;
     padding: 0.5em 10em 0.5em 1em;
 
     .active {

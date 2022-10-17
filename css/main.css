@@ -31,7 +31,7 @@ li {
   margin-top: 1em;
   padding: 0.25em;
   font-size: 1rem;
-  border-radius: 0.5em;
+  border-radius: 0.35em;
 }
 .secondaryButton:hover {
   background: #1d6429;
@@ -89,7 +89,7 @@ li {
 
 nav {
   border-bottom: solid;
-  background-color: var(--background-color-ligth);
+  background-color: #e9f0e8;
   padding: 0.5em 10em 0.5em 1em;
 }
 nav .active {
@@ -126,7 +126,7 @@ nav .navbar-toggler-icon {
   color: white;
   border: 3px solid #1d6429;
   padding: 0.4em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   margin: 2em;
 }
 .landing a:hover {
@@ -146,6 +146,7 @@ nav .navbar-toggler-icon {
   max-width: 100%;
   min-width: 5%;
   height: auto;
+  border-radius: 0.35em;
 }
 
 .about__grid {
@@ -248,7 +249,7 @@ nav .navbar-toggler-icon {
   padding: 0.5em;
   margin: 1em 0em;
   resize: none;
-  border: 3px solid #7da182;
+  border: 3px solid #b1ccb5;
   max-width: 100%;
 }
 .contact form .secondaryButton {
@@ -272,7 +273,7 @@ nav .navbar-toggler-icon {
   margin: 0.75em 0em;
   width: 100%;
   height: 100%;
-  border: 3px solid #7da182;
+  border: 3px solid #b1ccb5;
 }
 .contact__container__info img {
   width: 2em;
@@ -290,6 +291,9 @@ nav .navbar-toggler-icon {
 }
 .mision h4 {
   margin: 0.5em 0em 1.5em 0em;
+}
+.mision .carousel-inner {
+  border-radius: 0.35em;
 }
 
 /* TECH */
@@ -329,13 +333,8 @@ nav .navbar-toggler-icon {
   background-color: #e9f0e8;
   padding: 3em 0em 1em 0em;
 }
-.responsability .responsability_container {
-  padding: 2em 6em;
-}
-.responsability .responsability_container p, .responsability .responsability_container img {
-  max-width: 35%;
-  height: auto;
-  padding: 3em 1em;
+.responsability img {
+  border-radius: 0.35em;
 }
 
 /* PROJECTS */
@@ -368,8 +367,8 @@ nav .navbar-toggler-icon {
   margin-right: 2em;
   font-size: 1em;
 }
-.projects__container__card .progrss-bar {
-  color: blue;
+.projects__container__card .progress-bar {
+  background-color: #1d6429;
 }
 .projects__container__card .secondaryButton {
   margin-top: 0em;
@@ -383,46 +382,154 @@ nav .navbar-toggler-icon {
   margin-right: auto;
   width: 100%;
   height: auto;
+  border: 1px solid black;
   border-radius: 0.35em;
 }
 
 /* PROFILES */
-.profiles {
-  background-color: #e9f0e8;
-  padding: 3em 0em 1em 0em;
-}
-
 .profiles__container {
-  margin: 1em 0em;
+  background: linear-gradient(90deg, rgb(233, 240, 232) 0%, rgb(233, 240, 232) 50%, rgb(29, 39, 34) 50%, rgb(29, 39, 34) 100%);
+}
+.profiles__container .title__container {
+  display: flex;
+  justify-content: center;
+}
+.profiles__container .section__title {
+  padding: 0.5em 1em;
+  border: 3px solid black;
+  border-top-width: 0;
+  color: rgb(0, 0, 0);
+  border-radius: 0px 0px 0.35em 0.35em;
+  background-color: #b1ccb5;
+}
+.profiles__container [class*=profiles__title] {
+  margin-bottom: 0em;
+  padding: 2em 0em 0em 0em;
+  font-size: 3rem;
+  justify-self: center;
+}
+.profiles__container [class*=profiles__summary] {
+  margin-top: -3em;
+}
+.profiles__container [class*=profiles__summary] img {
+  width: 20em;
+  align-self: center;
+  margin-left: 3em;
+  border: 3px solid black;
+  border-radius: 3em;
+  background: #b1ccb5;
+}
+.profiles__container [class*=profiles__summary] ul {
+  margin-right: 4em;
+  align-self: center;
+}
+.profiles__container [class*=profiles__summary] li {
+  list-style: circle;
+  padding: 2em 0em;
+  font-size: 1.25rem;
+}
+.profiles__container [class*=numbers] {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.profiles__container [class*=numbers] .profiles__numbers__disclaimer {
+  font-size: 0.75rem;
+  text-align: left;
+  padding-left: 2em;
+  margin-top: 1em;
+}
+.profiles__container [class*=profiles__usage] {
+  padding: 0em 2em;
+}
+.profiles__container [class*=profiles__usage] h3 {
+  font-size: 1.5rem;
+}
+.profiles__container [class*=profiles__usage] p {
+  font-size: 1rem;
+}
+.profiles__container [class*=profiles__graphic] {
+  margin-top: -5em;
+}
+.profiles__container [class*=profiles__graphic] .piechart {
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  background-image: conic-gradient(pink 70deg, lightblue 0 235deg, orange 0);
+}
+.profiles__container [class*=profiles__ending] {
+  margin-top: -5em;
 }
 
-.profiles__container__card {
-  border: 3px solid;
-  padding: 2em;
-  margin: 3em 3em;
-  max-width: 40vw;
-  min-width: 20vw;
-  height: auto;
+.profiles__grid {
+  margin: 0em;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  -moz-column-gap: 0em;
+       column-gap: 0em;
+  row-gap: 12em;
+  grid-template-areas: "title_1 title_2" "summary_1 summary_2" "numbers_1 numbers_2" "usage_1 usage_2" "graphic_1 graphic_2" "ending_1 ending_2";
 }
-.profiles__container__card ul {
-  padding-left: 0em;
+.profiles__grid img {
+  width: 20vw;
 }
-.profiles__container__card h2 {
-  font-size: 3rem;
-  text-align: center;
-  color: black;
+
+.profiles__title_1 {
+  grid-area: title_1;
 }
-.profiles__container__card h3 {
-  font-size: 1.5rem;
+
+.profiles__title_2 {
+  grid-area: title_2;
+  color: white;
 }
-.profiles__container__card p {
-  text-align: justify;
-  padding: 3em 0em;
+
+.profiles__summary_1 {
+  grid-area: summary_1;
 }
-.profiles__container__card a {
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
+
+.profiles__summary_2 {
+  grid-area: summary_2;
+  color: white;
+}
+
+.profiles__numbers_1 {
+  grid-area: numbers_1;
+}
+
+.profiles__numbers_2 {
+  grid-area: numbers_2;
+  color: white;
+}
+
+.profiles__usage_1 {
+  grid-area: usage_1;
+}
+
+.profiles__usage_2 {
+  grid-area: usage_2;
+  color: white;
+}
+
+.profiles__graphic_1 {
+  grid-area: graphic_1;
+}
+
+.profiles__graphic_2 {
+  grid-area: graphic_2;
+}
+
+.profiles__ending_1 {
+  grid-area: ending_1;
+  text-align: right;
+  margin-right: 2em;
+}
+
+.profiles__ending_2 {
+  grid-area: ending_2;
+  color: white;
+}
+.profiles__ending_2 a {
+  color: white;
 }
 
 /* FAQ */
@@ -472,7 +579,7 @@ nav .navbar-toggler-icon {
 
 .footer {
   padding: 4em 6em;
-  border-top: 2px solid #7da182;
+  border-top: 2px solid #b1ccb5;
   background-color: #1d2722;
 }
 .footer p, .footer h2, .footer a {

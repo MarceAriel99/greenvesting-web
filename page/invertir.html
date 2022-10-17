@@ -44,33 +44,100 @@
     </header>
 
     <main>
-        <!-- Perfiles de inversión -->
-        <section class="profiles">
-            <h1 class="section__title">NOS AJUSTAMOS A CADA PERFIL DE INVERSOR</h1>
-            <div class="profiles__container flex-around flex-row flex-wrap">
-                <div class="profiles__container__card flex-column flex-between flex-nowrap">
-                    <h2>Riesgo bajo - moderado</h2>
-                    <h3>Este perfil le permite obtener una base de renta fija más un extra de renta variable según el retorno obtenido por el proyecto. Seguridad para el inversor a cambio de una renta menor.</h3>
-                    <p>¿Desea obtener los beneficios de la renta fija invirtiendo en proyectos sustentables? Ahora es posible. Comenzando a invertir con nosotros ayudará a financiar los proyectos de energía limpia con un riesgo y volatilidad mucho menores a las alternativas.</p>
-                    <ul>
-                        <li>Inversiones en dólares a partir de US$ 1000</li>
-                        <li>2.5% anual garantizado + extra por ganancias (0 a 2% típicamente)</li>
-                        <li>Período de rescate -> 1 mes</li>
-                    </ul>
-                    <a class="secondaryButton" href="#">COMENZAR</a>
-                </div>
-                <div class="profiles__container__card flex-column flex-between">
-                    <h2>Riesgo moderado - alto</h2>
-                    <h3>Este perfil le permite obtener ganancias extraordinarias, cobrando la renta generada por nuestros proyectos. Se requiere una mayor tolerancia al riesgo y a la volatilidad de los retornos.</h3>
-                    <p>Si quiere sacarle el máximo provecho posible a sus inversiones le proponemos un esquema de participación parcial en uno de los proyectos a elección. Con su capital financiará directamente todas las etapas del proyecto desde la investigación hasta su puesta a punto.</p>
-                    <ul>
-                        <li>Inversiones en dólares a partir de US$ 5000</li>
-                        <li>Ganancias de hasta 14% anual</li>
-                        <li>Retorno sujeto a la finalización y éxito del proyecto</li>
-                    </ul>
-                    <a class="secondaryButton" href="#">COMENZAR</a>
-                </div>
+        <section class="profiles__container">
+
+            <div class="title__container">
+                <h1 class="section__title">CONOCÉ TU PERFIL DE INVERSOR</h1>
             </div>
+            
+  
+            <!-- Perfiles de inversión -->
+            <section class="profiles__grid">
+                
+                <h2 class="profiles__title_1">CONSERVADOR</h2>
+                <h2 class="profiles__title_2">AGRESIVO</h2>
+
+                <div class="profiles__summary_1 flex-around">
+                    <img src="../resources/investor_1_alt.png" alt="">
+                    <ul>
+                        <li>Base de renta fija + variable</li>
+                        <li>Menor volatilidad</li>
+                        <li>Mayor previsibilidad</li>
+                    </ul>
+                </div>
+                <div class="profiles__summary_2 flex-around">
+                    <img src="../resources/investor_2.png" alt="">
+                    <ul>
+                        <li>Renta variable atada al proyecto</li>
+                        <li>Mayor volatilidad</li>
+                        <li>Mayor retornos potencial</li>
+                    </ul>
+                </div>
+
+                <div class="profiles__numbers_1">
+                    <div class="flex-around flex-row flex-nowrap">
+                        <div>
+                            <p>INVERSIONES DESDE LOS</p>
+                            <p>US$ 1000</p>
+                        </div>
+                        <div>
+                            <p>RENTABILIDAD ESPERADA</p>
+                            <p>2,5% + 1% *</p>
+                        </div>
+                        <div>
+                            <p>PERIODO DE RESCATE</p>
+                            <p>2 Meses</p>
+                        </div>
+                    </div>
+                    <p class="profiles__numbers__disclaimer">* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt architecto voluptatem quo aut soluta.</p>
+                </div>
+                <div class="profiles__numbers_2">
+                    <div class="flex-around flex-row flex-nowrap">
+                        <div>
+                            <p>INVERSIONES DESDE LOS</p>
+                            <p>US$ 5000</p>
+                        </div>
+                        <div>
+                            <p>RENTABILIDAD ESPERADA</p>
+                            <p>10% - 14% *</p>
+                        </div>
+                        <div>
+                            <p>PERIODO DE RESCATE</p>
+                            <p>Fin del Proyecto</p>
+                        </div>
+                    </div>
+                    <p class="profiles__numbers__disclaimer">* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt architecto voluptatem quo aut soluta.</p>
+                </div>
+
+                <div class="profiles__usage_1">
+                    <h3>¿Cómo usarán mis fondos?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem sit ex enim omnis aliquid.</p>
+                </div>
+                <div class="profiles__usage_2">
+                    <h3>¿Cómo usarán mis fondos?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem sit ex enim omnis aliquid.</p>
+                </div>
+
+                <div class="profiles__graphic_1 flex-around justify-content-center">
+                    <div class="piechart"></div>
+                </div>
+                <div class="profiles__graphic_2  flex-around justify-content-center">
+                    <div class="piechart"></div>
+                </div>
+
+                <div class="moreQuestions profiles__ending_1">
+                    <p>¿No te identificás totalmente con ninguno?</p>
+                </div>
+                <div class="moreQuestions profiles__ending_2 d-flex flex-wrap justify-content-left">
+                    <p>Nosotros te asesoramos</p>
+                    <a class="secondaryButton" href="../index.html#contact">CONTACTANOS</a>
+                </div>
+
+            </section>
         </section>
     </main>
 
