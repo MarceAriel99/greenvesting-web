@@ -192,6 +192,8 @@
 /* MISIÓN */
 
 .mision {
+    background-color: $backgroundColorLigth;
+    
     h1,h2 {
         padding-top: 0em;
         text-align: left;
@@ -333,8 +335,8 @@
 
     [class*="profiles__title"] {
         margin-bottom: 0em;
-        padding: 2em 0em 0em 0em;
-        font-size: 3rem;
+        padding: 1em 0em 0em 0em;
+        font-size: 4rem;
         justify-self: center;
     }
 
@@ -344,37 +346,61 @@
             width: 20em;
             //height: 20em;
             align-self: center;
-            margin-left: 3em;
+            //margin-left: 3em;
             border: 3px solid black;
             border-radius: 3em;
             background: $secondaryColor;
         }
         ul {
-            margin-right: 4em;
+            //margin-right: 4em;
             align-self: center;
         }
         li {
             list-style: circle;
-            padding: 2em 0em;
-            font-size: 1.25rem;
+            padding: 1.5em 0em;
+            font-size: 1.75rem;
+            //font-weight: 500;
         }
         
     }
 
-    [class*="numbers"] {
+    [class*="profiles__numbers"] {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+
+        .flex-around{
+            div{
+                padding: 0.25em;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                    
+                &:first-child{
+                    border-left: none;
+                }
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
 
         .profiles__numbers__disclaimer {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             text-align: left;
             padding-left: 2em;
             margin-top: 1em;
         }
     }
 
+    .profiles__numbers_2 {
+        .flex-around{
+            div{
+                border-color: white;
+            }
+        }
+    }
+
     [class*="profiles__usage"] {
-        padding: 0em 2em;
+        padding: 0em 0em 0em 2em;
         h3 {
             font-size: 1.5rem;
         }
@@ -384,26 +410,53 @@
     }
 
     [class*="profiles__graphic"] {
-        margin-top: -5em;
-        .piechart {
-            width: 25em;
-            height: 25em;
-            border-radius: 50%;
-            background-image: conic-gradient(
-                pink 70deg, 
-                lightblue 0 235deg, 
-                orange 0);
+        margin-top: -6em;
+        .pie_container{
+            padding: 2em 8em;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            .piechart {
+                width: 25em;
+                height: 25em;     
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .profiles__graphic_1{
+        .pie_container{
+            background-image: url("../resources/pie_chart_1.png");
+            .piechart {
+                background-image: conic-gradient(
+                    #5d9265 18deg, 
+                    #3a6e43 0 108deg,
+                    #26582f 0 216deg,
+                    #184420 0);
+            }
+        }
+    }
+
+    .profiles__graphic_2{
+        .pie_container{
+            background-image: url("../resources/pie_chart_2.png");
+            .piechart {
+                background-image: conic-gradient(
+                    #5d9265 18deg, 
+                    #26582f 0 54deg,
+                    #184420 0);
+            }
         }
     }
 
     [class*="profiles__ending"] {
-        margin-top: -5em;
+        margin-top: -4em;
     }
 }
 
 .profiles__grid {
     margin: 0em;
-    @include grid (auto, auto, 0em, 12em);
+    @include grid (1fr 1fr, auto, 4em, 10em);
     
     grid-template-areas:
     "title_1 title_2"
@@ -465,7 +518,7 @@
 .profiles__ending_1 {
     grid-area: ending_1;
     text-align: right;
-    margin-right: 2em;
+    //margin-right: 2em;
 }
 
 .profiles__ending_2 {

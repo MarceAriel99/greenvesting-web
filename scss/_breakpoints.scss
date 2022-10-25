@@ -6,6 +6,28 @@
     }
 }
 
+@media (max-width:1800px) {
+    /* PROFILES */
+    .profiles__container{
+        [class*="profiles__summary"] {
+            flex-direction: column;
+        }
+        [class*="profiles__numbers"] {
+            margin-top: -5em;
+            .flex-around{
+                flex-direction: column;
+            }
+            div {
+                padding: 1em 0em;
+            }
+        }
+        [class*="profiles__usage"] {
+            margin-top: -6em;
+        }
+    }
+
+}
+
 @media (max-width:1400px) {
     /* TECH */
     .tech {
@@ -18,6 +40,10 @@
         "info info info"
         "button button button"
         "img1 img2 img3";
+    }
+    /* PROFILES */
+    .profiles__grid {
+        column-gap: 2em;
     }
 }
 
@@ -73,10 +99,6 @@
         background-size: 100%;
         background-position: 30em 0em;
     }
-    /* PROFILES */
-    .profiles__container__card {
-        max-width: 70vw;
-    }
     /* FOOTER */
     .footer {
         padding: 4em 4em;
@@ -92,6 +114,29 @@
             justify-content: space-between;
         }
     }
+    /* PROFILES */
+    .profiles__grid {
+        [class*="profiles__title"] {
+            font-size: 3em;
+        }
+        [class*="profiles__graphic"] {
+            .piechart {
+                width: 15em;
+                height: 15em;
+            }
+        }
+        .moreQuestions {
+            p {
+                padding: 0em;
+            }
+        }
+        .profiles__ending_2 {
+            p {
+                padding-right: 1em;
+            }
+        }
+    }
+    
 }
 
 @media (max-width:768px) {
@@ -166,12 +211,6 @@
         margin: 1.5em 1em;
         min-width: 15em;
     }
-    /* PROFILES */
-    .profiles__container__card {
-        padding: 1em;
-        margin: 1em 2em;
-        max-width: 85vw;
-    }
     /* FAQ*/
     .questions__container__card {
         margin: 1.5em 1em;
@@ -211,11 +250,6 @@
     }
     .tech .tech_container {
         padding: 2em 2em;
-    }
-    /* PROFILES */
-    .profiles__container__card {
-        //min-width: 15em;
-        margin: 1.5em 1em;
     }
     /* FAQ */
     .moreQuestions p {
