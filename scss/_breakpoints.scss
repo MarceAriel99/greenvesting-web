@@ -16,16 +16,23 @@
             margin-top: -5em;
             .flex-around{
                 flex-direction: column;
-            }
-            div {
-                padding: 1em 0em;
+                padding: 0em 1em;
+
+                div:not(.line){
+                    padding: 0.5em 0em;
+                }
+
+                .line {
+                    align-self: center;
+                    width: 15em;
+                    height: 2px;
+                }
             }
         }
         [class*="profiles__usage"] {
             margin-top: -6em;
         }
     }
-
 }
 
 @media (max-width:1400px) {
@@ -42,8 +49,21 @@
         "img1 img2 img3";
     }
     /* PROFILES */
-    .profiles__grid {
-        column-gap: 2em;
+    .profiles__container{
+        .profiles__grid {
+            column-gap: 2em;
+        }
+        [class*="profiles__graphic"] {
+            .pie_container{
+                padding: 1.5em 6em;
+                width: 492px;
+                height: 348px;
+                .piechart {
+                    width: 18.75em;
+                    height: 18.75em;
+                }
+            }
+        }
     }
 }
 
@@ -116,19 +136,48 @@
     }
     /* PROFILES */
     .profiles__grid {
+        column-gap: 1em;
         [class*="profiles__title"] {
             font-size: 3em;
         }
-        [class*="profiles__graphic"] {
-            .piechart {
+        [class*="profiles__summary"] {
+            img {
                 width: 15em;
-                height: 15em;
+            }
+            li {
+                font-size: 1.25rem;
+            }
+            
+        }
+        [class*="profiles__numbers"] {
+            .flex-around{
+                .line {
+                    width: 12em;
+                }
             }
         }
-        .moreQuestions {
-            p {
-                padding: 0em;
+        [class*="profiles__graphic"] {
+            .pie_container{
+                padding: 1em 4em;
+                width: 369px;
+                height: 261px;
+                .piechart {
+                    width: 14em;
+                    height: 14em;
+                }
             }
+        }
+        [class*="profiles__ending"] {
+            p {
+                font-size: 1.1em;
+                text-align: center;
+            }     
+        }
+        .moreQuestions {
+            padding: 1em 0em;
+        }
+        a {
+            margin-right: 1em;
         }
         .profiles__ending_2 {
             p {
@@ -137,6 +186,23 @@
         }
     }
     
+}
+
+@media (max-width:800px) {
+    /* PROFILES */
+    .profiles__grid {
+        [class*="profiles__graphic"] {
+            .pie_container{
+                padding: 1em 4em;
+                width: 328px;
+                height: 232px;
+                .piechart {
+                    width: 12.5em;
+                    height: 12.5em
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -211,6 +277,49 @@
         margin: 1.5em 1em;
         min-width: 15em;
     }
+    /* PROFILES*/
+    .profiles__container {
+        background: linear-gradient(180deg, rgba(233,240,232,1) 0%, rgba(233,240,232,1) 47%, rgb(29,39,34,1) 47%, rgba(29,39,34,1) 100%);
+
+        .profiles__grid {
+            @include grid (1fr, auto, 4em, 10em);
+    
+            grid-template-areas:
+            "title_1"
+            "summary_1"
+            "numbers_1"
+            "usage_1"
+            "graphic_1"
+            "title_2"
+            "summary_2"
+            "numbers_2"
+            "usage_2"
+            " graphic_2"
+            "ending_1"
+            "ending_2";
+
+            [class*="profiles__summary"] {
+                flex-direction: row;
+                img {
+                    width: 15em;
+                }
+                li {
+                    font-size: 1.25rem;
+                }
+            }
+            [class*="profiles__ending"] {
+                p {
+                    display: block;
+                    color: white;
+                }
+                justify-content: center;
+            }
+            .profiles__ending_2 {
+                margin-top: -10em;
+                height: min-content;
+            }
+        }
+    }
     /* FAQ*/
     .questions__container__card {
         margin: 1.5em 1em;
@@ -251,9 +360,71 @@
     .tech .tech_container {
         padding: 2em 2em;
     }
+    /*PROFILES*/
+    .profiles__container {
+        .profiles__grid {
+            [class*="profiles__summary"] {
+                margin-top: -6em;
+                flex-direction: column;
+                img {
+                    width: 20em;
+                }
+                li {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
     /* FAQ */
     .moreQuestions p {
         font-size: 1.2rem;
         padding: 1em 0em;
     }
+}
+
+@media (max-width:380px) {
+        /*PROFILES*/
+        .profiles__container {
+            .profiles__grid {
+                [class*="profiles__title"] {
+                    font-size: 2.25rem;
+                }
+                [class*="profiles__summary"] {
+                    img {
+                        width: 15em;
+                    }
+                    li {
+                        font-size: 1.25rem;
+                    }
+                }
+                [class*="profiles__numbers"] {
+                    font-size: 1.3rem;
+
+                    .flex-around{
+                        .line {
+                            width: 10em;
+                        }
+                    }
+            
+                    .profiles__numbers__disclaimer {
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                [class*="profiles__graphic"] {
+                    .pie_container{
+                        padding: 0.75em 3em;
+                        width: 246px;
+                        height: 174px;
+                        .piechart {
+                            width: 9.375em;
+                            height: 9.375em
+                        }
+                    }
+                }
+                .profiles__ending_2 {
+                    flex-direction: column;
+                }
+            }
+        }
 }

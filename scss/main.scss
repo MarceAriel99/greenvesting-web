@@ -344,63 +344,46 @@
         margin-top: -3em;
         img {
             width: 20em;
-            //height: 20em;
             align-self: center;
-            //margin-left: 3em;
             border: 3px solid black;
             border-radius: 3em;
             background: $secondaryColor;
         }
         ul {
-            //margin-right: 4em;
             align-self: center;
         }
         li {
             list-style: circle;
             padding: 1.5em 0em;
             font-size: 1.75rem;
-            //font-weight: 500;
-        }
-        
+        } 
     }
 
     [class*="profiles__numbers"] {
         text-align: center;
         font-size: 1.6rem;
 
-        .flex-around{
-            div{
-                padding: 0.25em;
-                border-left: 1px solid black;
-                border-right: 1px solid black;
-                    
-                &:first-child{
-                    border-left: none;
-                }
-                &:last-child{
-                    border-right: none;
-                }
-            }
+        .line {
+            width: 2px;
+            background-color: black;
         }
 
         .profiles__numbers__disclaimer {
             font-size: 0.9rem;
             text-align: left;
-            padding-left: 2em;
+            padding: 0em 1em;
             margin-top: 1em;
         }
     }
 
     .profiles__numbers_2 {
-        .flex-around{
-            div{
-                border-color: white;
-            }
+        .line {
+            background-color: white;
         }
     }
 
     [class*="profiles__usage"] {
-        padding: 0em 0em 0em 2em;
+        padding: 0em 1em;
         h3 {
             font-size: 1.5rem;
         }
@@ -465,10 +448,6 @@
     "usage_1 usage_2"
     "graphic_1 graphic_2"
     "ending_1 ending_2";
-
-    img {
-        width: 20vw;
-    }
 }
 
 .profiles__title_1 {
