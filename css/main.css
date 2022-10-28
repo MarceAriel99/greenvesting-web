@@ -1011,7 +1011,6 @@ nav .navbar-toggler-icon {
   /* FAQ */
   .moreQuestions p {
     font-size: 1.2rem;
-    padding: 1em 0em;
   }
 }
 @media (max-width: 380px) {
@@ -1045,5 +1044,8 @@ nav .navbar-toggler-icon {
   }
   .profiles__container .profiles__grid .profiles__ending_2 {
     flex-direction: column;
+  }
+  .profiles__container .profiles__grid .profiles__ending_2 a {
+    margin: 0em;
   }
 }/*# sourceMappingURL=main.css.map */
