@@ -78,12 +78,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        height: 80vh;
         margin: 0;
 
         p {
             max-width: 50%;
-            margin: 0;
+            //margin: 0;
         }
     }
     /* OPINIONS */
@@ -384,6 +383,18 @@
 }
 
 @media (max-width:380px) {
+    /* LANDING */
+    .landing {
+        h1{
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+        }
+        a{
+            margin: 2em 0em;
+        }
+    }
     /*PROFILES*/
     .profiles__container {
         .profiles__grid {

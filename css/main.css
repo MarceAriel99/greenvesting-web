@@ -184,11 +184,15 @@ nav .navbar-toggler-icon {
 .timeline {
   background-color: #1d2722;
   padding: 3em 0em 1em 0em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .timeline .flex-between {
   margin: 6em 8em;
 }
 .timeline .flex-between p {
+  margin: 2em 0em;
   max-width: 25%;
   color: white;
 }
@@ -766,12 +770,10 @@ nav .navbar-toggler-icon {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 80vh;
     margin: 0;
   }
   .timeline .flex-between p {
     max-width: 50%;
-    margin: 0;
   }
   /* OPINIONS */
   .opinions__container {
@@ -1012,6 +1014,16 @@ nav .navbar-toggler-icon {
   }
 }
 @media (max-width: 380px) {
+  /* LANDING */
+  .landing h1 {
+    font-size: 2.5em;
+  }
+  .landing h2 {
+    font-size: 1.25em;
+  }
+  .landing a {
+    margin: 2em 0em;
+  }
   /*PROFILES*/
   .profiles__container .profiles__grid [class*=profiles__title] {
     font-size: 2.25rem;
