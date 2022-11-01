@@ -383,6 +383,12 @@ nav .navbar-toggler-icon {
 .projects__container__card .flex-between {
   align-items: center;
 }
+.projects__container__card:nth-child(1) .progress-bar::after {
+  content: "42% Fondeado";
+}
+.projects__container__card:nth-child(2) .progress-bar::after {
+  content: "67% Fondeado";
+}
 
 .projects__container__card__img {
   margin-left: auto;
@@ -927,9 +933,15 @@ nav .navbar-toggler-icon {
     padding: 2em 3em;
   }
   /* PROJECTS */
-  .projects__container__card {
+  .projects .projects__container__card {
     margin: 1.5em 1em;
     min-width: 15em;
+  }
+  .projects .projects__container__card:nth-child(1) .progress-bar::after {
+    content: "42% Fondeado";
+  }
+  .projects .projects__container__card:nth-child(2) .progress-bar::after {
+    content: "67% Fondeado";
   }
   /* PROFILES*/
   .profiles__container {
@@ -997,6 +1009,13 @@ nav .navbar-toggler-icon {
   .tech .tech_container {
     padding: 2em 2em;
   }
+  /* PROJECTS */
+  .projects .projects__container__card:nth-child(1) .progress-bar::after {
+    content: "42%";
+  }
+  .projects .projects__container__card:nth-child(2) .progress-bar::after {
+    content: "67%";
+  }
   /*PROFILES*/
   .profiles__container .profiles__grid [class*=profiles__summary] {
     margin-top: -6em;
@@ -1024,7 +1043,11 @@ nav .navbar-toggler-icon {
   .landing a {
     margin: 2em 0em;
   }
-  /*PROFILES*/
+  /* MISION */
+  .responsability h2 {
+    font-size: 1.75em;
+  }
+  /* PROFILES */
   .profiles__container .profiles__grid [class*=profiles__title] {
     font-size: 2.25rem;
   }

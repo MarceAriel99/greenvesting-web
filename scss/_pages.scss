@@ -300,6 +300,22 @@
     .flex-between{
         align-items: center;
     }
+
+    &:nth-child(1){
+        .progress-bar{
+            &::after{
+                content:'42% Fondeado';
+            }
+        }
+    }
+
+    &:nth-child(2){
+        .progress-bar{
+            &::after{
+                content:'67% Fondeado';
+            }
+        }
+    }
 }
 
 .projects__container__card__img {
