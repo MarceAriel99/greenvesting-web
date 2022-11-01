@@ -226,6 +226,12 @@
             "button button"
             "img1 img2"
             "img3 img3";
+            .about__img3.d-block {
+                display: none !important;
+            }
+            .about__img3.d-none {
+                display: block !important;
+            }
         }
     }
     /* TIMELINE */

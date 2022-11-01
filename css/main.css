@@ -572,22 +572,6 @@ nav .navbar-toggler-icon {
   margin-top: 3em;
 }
 
-.moreQuestions {
-  padding: 2em;
-  align-items: center;
-}
-.moreQuestions a {
-  font-size: 1.2rem;
-  display: inline-block;
-  margin: 0em;
-}
-.moreQuestions p {
-  font-size: 1.3rem;
-  display: inline-block;
-  padding: 1em;
-  margin: 0em;
-}
-
 .footer {
   padding: 4em 6em;
   border-top: 2px solid #b1ccb5;
@@ -864,6 +848,12 @@ nav .navbar-toggler-icon {
     -moz-column-gap: 1em;
          column-gap: 1em;
     grid-template-areas: "info info" "button button" "img1 img2" "img3 img3";
+  }
+  .about .about__grid .about__img3.d-block {
+    display: none !important;
+  }
+  .about .about__grid .about__img3.d-none {
+    display: block !important;
   }
   /* TIMELINE */
   .timeline .flex-between p {
