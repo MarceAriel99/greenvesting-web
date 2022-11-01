@@ -474,13 +474,13 @@ nav .navbar-toggler-icon {
   border-radius: 50%;
 }
 .profiles__container .profiles__graphic_1 .pie_container {
-  background-image: url("../resources/pie_chart_1.png");
+  background-image: url("../resources/pie_chart_1.webp");
 }
 .profiles__container .profiles__graphic_1 .pie_container .piechart {
   background-image: conic-gradient(#5d9265 18deg, #3a6e43 0 108deg, #26582f 0 216deg, #184420 0);
 }
 .profiles__container .profiles__graphic_2 .pie_container {
-  background-image: url("../resources/pie_chart_2.png");
+  background-image: url("../resources/pie_chart_2.webp");
 }
 .profiles__container .profiles__graphic_2 .pie_container .piechart {
   background-image: conic-gradient(#5d9265 18deg, #26582f 0 54deg, #184420 0);
