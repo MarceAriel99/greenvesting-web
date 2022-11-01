@@ -42,6 +42,24 @@ li {
     }
 }
 
+.moreQuestions {
+    padding: 2em;
+    align-items: center;
+
+    a {
+        font-size: 1.2rem;
+        display: inline-block;
+        margin: 0em;
+    }
+
+    p {   
+        font-size: 1.3rem;
+        display: inline-block;
+        padding: 1em;
+        margin: 0em;
+    }
+}
+
 /*FELX STYLES*/
 
 .flex-between {
@@ -56,7 +74,7 @@ li {
 
 .flex-right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .flex-column {
