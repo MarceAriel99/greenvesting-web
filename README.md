@@ -13,8 +13,8 @@ This project was developed as part of my frontend learning path. This was my fir
 
 ## Links of interest
 
-- GitHub pages: TODO Link
-- Server: TODO Link
+- [GitHub pages](https://marceariel99.github.io/greenvesting-web/)
+- [Server deployment](https://greenvesting.netlify.app/)
 
 ## What I've learned
 
