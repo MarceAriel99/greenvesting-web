@@ -1,4 +1,4 @@
-<h1 align="center" style="color:black"> Greenvesting - frontend </h1>
+<h1 align="center" style="color:black"> Greenvesting</h1>
 
 This project was developed as part of my frontend learning path. This was my first approach to HTML and CSS.
 
