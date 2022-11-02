@@ -364,6 +364,10 @@
             font-size: 1.2rem;
         }
     }
+    /* CONTACT */
+    .contact .contact__container {
+        margin: 0em 0.5em;
+    }
     /* TECH */
     .tech {
         background-size: 140%;
@@ -408,7 +412,11 @@
                 }
             }
         }
-    }  
+    }
+    /* FOOTER */
+    .footer {
+        padding: 2em 1em;
+    }
 }
 
 @media (max-width:380px) {
@@ -424,13 +432,42 @@
             margin: 2em 0em;
         }
     }
+    /* ABOUT */
+    .about {
+        .about__grid {
+            column-gap: 1em;
+            grid-template-areas: 
+            "info"
+            "button"
+            "img1"
+            "img2"
+            "img3";
+            .about__img3.d-block {
+                display: block !important;
+            }
+            .about__img3.d-none {
+                display: none !important;
+            }
+        }
+    }
+    /* OPINIONS */
+    .opinions .opinions__container .opinions__container__card {
+        padding: 0.5em;
+        width: 95vw;
+    }
     /* MISION */
     .responsability {
         h2 {
-            font-size: 1.75em;
+            font-size: 1.75rem;
+        }
+        h3 {
+            font-size: 1.25rem;
         }
     }
-
+    /* PROJECTS */
+    .projects .projects__container__card {
+        padding: 0.5em;
+    }
     /* PROFILES */
     .profiles__container {
         .profiles__grid {

@@ -33,7 +33,7 @@
 
     img{
         max-width: 100%;
-        min-width: 5%;
+        min-width: 8vw;
         height: auto;
         border-radius: 0.35em;
     }
@@ -488,6 +488,10 @@
     .accordion_container {
         justify-content: center;
         margin: 4em 0em 1em 0em;
+
+        .accordion {
+            max-width: 70em;
+        }
 
         .accordion-button {
             background-color: $mainColor;
