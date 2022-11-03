@@ -25,10 +25,10 @@ This project was developed as part of my frontend learning path. This was my fir
 
 ### Some insight into development
 
-- As this is my first project using HTML and CSS I started the development using vanilla HTML5 and CSS3. Then worked my way around integrating Bootstrap and SASS.
+- As this is my first project using HTML and CSS I started the development using vanilla HTML5 and CSS3. Then I worked my way around integrating Bootstrap and SASS.
 - I took a desktop-first approach to make the site responsive as it was the most straightforward way when starting. However, I'm considering using a mobile-first approach for my next project.
 
-## ¿Why Greenvesting?
+## Why Greenvesting?
 
 When I was starting the project I thought that it would be nice to do the webpage about something exciting to me. Environmentalism and investing are two concepts that I find interesting, and are often seen as incompatible. I think they are not, so I created this fake investing crowdfunding company that accepts small and big investments to be directed to green energy projects.
 
