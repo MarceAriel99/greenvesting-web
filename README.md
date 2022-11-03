@@ -17,13 +17,20 @@ This project was developed as part of my frontend learning path. This was my fir
 
 ## What I've learned
 
-TODO Description
+- HTML5 file structure, common tags, pages linking and SEO optimization
+- CSS3 common properties, box modeling, types of selectors, pseudo-classes, flexbox, grid, responsive design and animations
+- Bootstrap integration with CSS3, common components and responsive navbar integration
+- SASS nesting, partials, variables and mixins
+- File size and type optimization for web
 
-### Some insigth into development
+### Some insight into development
 
 - As this is my first project using HTML and CSS I started the development using vanilla HTML5 and CSS3. Then worked my way around integrating Bootstrap and SASS.
-- I took a desktop-first approach to make the site responsive as it was the most straigthforward way, however I'm considering using a mobile-first approach for my next project.
+- I took a desktop-first approach to make the site responsive as it was the most straightforward way when starting. However, I'm considering using a mobile-first approach for my next project.
 
 ## ¿Why Greenvesting?
 
-TODO Description
+When I was starting the project I thought that it would be nice to do the webpage about something exciting to me. Environmentalism and investing are two concepts that I find interesting, and are often seen as incompatible. I think they are not, so I created this fake investing crowdfunding company that accepts small and big investments to be directed to green energy projects.
+
+![Banner](https://user-images.githubusercontent.com/60658991/199740685-35deef4b-6fb2-4cca-b36b-d535ec91f081.png)
+
