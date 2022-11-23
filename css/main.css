@@ -88,6 +88,7 @@ li {
 
 * {
   font-family: "Poppins";
+  text-align: justify;
 }
 
 .section__title {
@@ -149,8 +150,12 @@ nav .navbar-toggler-icon {
   background: #1d6429;
   color: white;
 }
+.landing h1 {
+  text-align: center;
+}
 .landing h2 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /* ABOUT */
@@ -319,25 +324,66 @@ nav .navbar-toggler-icon {
   color: rgb(255, 255, 255);
   padding: 0em 0em 6em 0em;
 }
-.tech .gradient {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 82%, rgb(0, 0, 0) 98%);
-}
 .tech .section__title {
   padding-top: 1em;
 }
-.tech .tech_container {
-  padding: 2em 6em;
+.tech .gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0em, rgba(255, 255, 255, 0) 25em);
 }
-.tech .tech_container__element {
-  margin: 2em;
-  min-width: 15%;
-  max-width: 30%;
-  height: auto;
+.tech .gradient .tech__container {
+  justify-content: start;
+  margin: 4em 8em 1em 8em;
 }
-.tech .tech_container__element h3 {
-  margin: 0em 0em 2em 0em;
-  font-size: 1.2rem;
+.tech .gradient .tech__container .accordion {
+  max-width: 35em;
+}
+.tech .gradient .tech__container .accordion-button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 1em 1em;
+  border: 4px solid rgba(39, 139, 206, 0.363);
+  border-radius: var(--bs-accordion-inner-border-radius);
+  box-shadow: none;
+  transition: border-bottom 0.25s, border-color 0.5s, background-color 0.5s;
+  font-size: 1.25rem;
+}
+.tech .gradient .tech__container .accordion-button:not(.collapsed) {
+  border-bottom: 0px solid;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-color: rgba(141, 201, 241, 0.377);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: border-bottom 0s;
+}
+.tech .gradient .tech__container .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.tech .gradient .tech__container .accordion-item {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.tech .gradient .tech__container .accordion-item:not(:first-of-type) .accordion-button {
+  margin-top: 3em;
+}
+.tech .gradient .tech__container .accordion-item .accordion-body {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 4px solid rgba(141, 201, 241, 0.377);
+  border-top: 0px;
+  border-radius: var(--bs-accordion-inner-border-radius);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.tech .gradient .tech__container .accordion-item .accordion-body img {
+  border-radius: 0.35em;
+}
+.tech .gradient .tech__container .accordion-item .accordion-body p {
+  padding: 1em 0em 0em 0em;
+  margin: 0em;
+  color: white;
+}
+.tech .gradient .tech__container .accordion-item .accordion-body p .green_text {
+  color: #1d6429;
 }
 
 /* RESPONSABILITY */
@@ -367,9 +413,9 @@ nav .navbar-toggler-icon {
 }
 .projects .projects__container__card h2 {
   font-weight: 600;
+  text-align: center;
 }
 .projects .projects__container__card p, .projects .projects__container__card h2 {
-  text-align: center;
   margin: 0.75em 0em;
 }
 .projects .projects__container__card .progress {
@@ -771,6 +817,9 @@ nav .navbar-toggler-icon {
     background-size: 100%;
     background-position: 30em 0em;
   }
+  .tech .gradient .tech__container {
+    justify-content: center;
+  }
   /* FOOTER */
   .footer {
     padding: 4em 4em;
@@ -832,6 +881,10 @@ nav .navbar-toggler-icon {
     width: 12.5em;
     height: 12.5em;
   }
+  /* TECH */
+  .tech .gradient .tech__container {
+    margin: 4em 5em 1em 5em;
+  }
 }
 @media (max-width: 768px) {
   /* GENERAL */
@@ -891,11 +944,8 @@ nav .navbar-toggler-icon {
     background-size: 120%;
     background-position: 20em 0em;
   }
-  .tech .tech_container__element {
-    max-width: 50%;
-  }
-  .tech .tech_container {
-    padding: 2em 3em;
+  .tech .gradient .tech__container .accordion-button {
+    font-size: 1rem;
   }
   /* PROJECTS */
   .projects .projects__container__card {
@@ -970,11 +1020,8 @@ nav .navbar-toggler-icon {
     background-size: 140%;
     background-position: 15em 0em;
   }
-  .tech .tech_container {
-    padding: 2em 2em;
-  }
-  .tech .tech_container .tech_container__element {
-    max-width: 100%;
+  .tech .gradient .tech__container {
+    margin: 4em 1em 1em 1em;
   }
   /* PROJECTS */
   .projects .projects__container__card:nth-child(1) .progress-bar::after {
