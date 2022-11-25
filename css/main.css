@@ -639,11 +639,31 @@ nav .navbar-toggler-icon {
        column-gap: 3em;
   row-gap: 0em;
   grid-template-areas: "logo cta credit" "phrase cta-btns disclaimer" "phrase cta-btns link";
+  /*
+  img {
+      width: auto;
+      height: 2em;
+      padding: 0em 0.5em;
+  }
+  */
 }
-.footer__container img {
-  width: auto;
-  height: 2em;
-  padding: 0em 0.5em;
+.footer__container .facebook_logo {
+  background: url("../resources/facebook_white.webp") no-repeat;
+}
+.footer__container .instagram_logo {
+  background: url("../resources/instagram_white.webp") no-repeat;
+}
+.footer__container .twitter_logo {
+  background: url("../resources/twitter_white.webp") no-repeat;
+}
+.footer__container .linkedin_logo {
+  background: url("../resources/linkedin_white.webp") no-repeat;
+}
+.footer__container .footer__button {
+  background-size: 2.5em;
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
 }
 .footer__container h2 {
   grid-area: cta;
@@ -677,7 +697,7 @@ nav .navbar-toggler-icon {
 .footer__container .footer__disclaimer {
   grid-area: disclaimer;
 }
-.footer__container a :not(.footer__logo) {
+.footer__container a :not(.footer__logo .footer__button) {
   grid-area: link;
 }
 .footer__container .logo {
@@ -685,21 +705,24 @@ nav .navbar-toggler-icon {
 }
 
 .hoverExpandSlow {
-  transform: scale(1);
   transition: transform 1s;
 }
 .hoverExpandSlow:hover {
   transform: scale(1.02);
-  transition: transform 1s;
 }
 
 .hoverExpandFast {
-  transform: scale(1);
   transition: transform 0.25s;
 }
 .hoverExpandFast:hover {
   transform: scale(1.02);
-  transition: transform 0.25s;
+}
+
+.hoverButton {
+  transition: transform 0.5s;
+}
+.hoverButton:hover {
+  transform: scale(1.05);
 }
 
 .movingUnderline {
