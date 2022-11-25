@@ -510,7 +510,7 @@ nav .navbar-toggler-icon {
 .profiles__container [class*=profiles__summary][class*="2"] {
   grid-area: summary_2;
 }
-.profiles__container [class*=profiles__numbers] {
+.profiles__container [class*=profiles__numbers] p {
   text-align: center;
   font-size: 1.6rem;
 }

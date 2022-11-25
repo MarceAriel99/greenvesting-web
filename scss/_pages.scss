@@ -442,8 +442,10 @@
     }
 
     [class*="profiles__numbers"] {
-        text-align: center;
-        font-size: 1.6rem;
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
         .line {
             width: 2px;
             background-color: black;
