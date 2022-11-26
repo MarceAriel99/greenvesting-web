@@ -248,8 +248,49 @@
         }
     }
     /* TIMELINE */
-    .timeline .flex-between p{
-        max-width: 90%;
+    .timeline {
+        .section__title {
+            font-size: 2rem;
+        }
+        #timeline__container{
+            flex-direction: column;
+
+            &:hover {
+                .tl-item {
+                    height: 20vh;
+                    width: 100%;
+                }
+                .tl-item:first-of-type{
+                    height: 30vh;
+                }
+            }   
+        }
+
+        .tl-item {
+            width: 100vw;
+            height: 30vh;
+            transition: height 0.5s ease;
+        
+            &:before, &:after {
+                left: 0; top: 0;
+                width: 100%; height: 100%;
+            }
+        
+            &:hover {
+                width: 100vw !important;
+                height: 50vh !important;
+            }
+        }
+
+        .tl-content {
+            h1 {
+                font-size: 1.2rem;
+            }
+    
+            p {
+                font-size: 0.85rem;
+            }
+        }
     }
     /* OPINIONS */
     .opinions {
@@ -376,6 +417,24 @@
     .moreQuestions{
         p{
             font-size: 1.2rem;
+        }
+    }
+    /* TIMELINE */
+    .timeline {
+        .tl-item {   
+            &:before {
+                background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $backgroundColorDark 75%);
+            }
+        }
+
+        .tl-content {
+            margin: 0em 2em 0em 1em;
+            h1 {
+                font-size: 1rem;
+            }
+            p {
+                line-height: 125%;
+            }
         }
     }
     /* CONTACT */
